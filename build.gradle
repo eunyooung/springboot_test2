@@ -18,6 +18,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+plugins {
+  id "org.sonarqube" version "3.3"
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
